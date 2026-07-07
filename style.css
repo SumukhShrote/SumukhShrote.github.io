@@ -1,4 +1,4 @@
-/* ─── Reset & Base ─────────────────────────────────────── */
+/*  Reset & Base  */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -34,7 +34,7 @@ a {
 }
 a:hover { opacity: 0.65; }
 
-/* ─── Navbar ────────────────────────────────────────────── */
+/*  Navbar  */
 #navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -81,7 +81,7 @@ a:hover { opacity: 0.65; }
 }
 .nav-links a:hover { color: var(--text); opacity: 1; }
 
-/* ─── Hero ──────────────────────────────────────────────── */
+/*  Hero  */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -151,15 +151,11 @@ a:hover { opacity: 0.65; }
   left: 24px;
   font-size: 0.75rem;
   color: var(--border);
-  animation: bob 2s ease-in-out infinite;
 }
 
-@keyframes bob {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(5px); }
-}
 
-/* ─── Sections ──────────────────────────────────────────── */
+
+/*  Sections  */
 .section {
   padding: var(--section-gap) 24px;
 }
@@ -181,7 +177,7 @@ a:hover { opacity: 0.65; }
   margin-bottom: 48px;
 }
 
-/* ─── About ─────────────────────────────────────────────── */
+/*  About  */
 .about-text {
   font-size: 1.125rem;
   line-height: 1.8;
@@ -190,7 +186,17 @@ a:hover { opacity: 0.65; }
   max-width: 620px;
 }
 
-/* ─── Research ──────────────────────────────────────────── */
+.about-text + .about-text {
+  margin-top: 20px;
+}
+
+.about-personal {
+  margin-top: 20px;
+  color: var(--secondary);
+  font-size: 1rem;
+}
+
+/*  Research  */
 .research-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -217,7 +223,7 @@ a:hover { opacity: 0.65; }
   font-weight: 400;
 }
 
-/* ─── Cards (Publications + Work) ─────────────────── */
+/*  Cards (Publications + Work)  */
 .card-list {
   list-style: none;
   display: flex;
@@ -285,7 +291,7 @@ a:hover { opacity: 0.65; }
 }
 .card-links a:hover { opacity: 0.65; }
 
-/* ─── Experience ────────────────────────────────────────── */
+/*  Experience  */
 .exp-list {
   list-style: none;
   display: flex;
@@ -335,7 +341,7 @@ a:hover { opacity: 0.65; }
   line-height: 1.65;
 }
 
-/* ─── News ──────────────────────────────────────────────── */
+/*  News  */
 .news-list {
   list-style: none;
   display: flex;
@@ -362,7 +368,7 @@ a:hover { opacity: 0.65; }
   line-height: 1.6;
 }
 
-/* ─── Contact ───────────────────────────────────────────── */
+/*  Contact  */
 .contact-email {
   font-size: 1.0625rem;
   color: var(--text);
@@ -379,7 +385,7 @@ a:hover { opacity: 0.65; }
 .contact-links a { color: var(--secondary); }
 .contact-links a:hover { color: var(--accent); opacity: 1; }
 
-/* ─── Footer ────────────────────────────────────────────── */
+/*  Footer  */
 footer {
   padding: 32px 24px;
   text-align: center;
@@ -388,29 +394,9 @@ footer {
   border-top: 1px solid var(--border);
 }
 
-/* ─── Fade-in Animation ─────────────────────────────────── */
-.fade-in {
-  opacity: 0;
-  transform: translateY(16px);
-  animation: fadeUp 0.7s ease forwards;
-  animation-delay: 0.1s;
-}
 
-@keyframes fadeUp {
-  to { opacity: 1; transform: translateY(0); }
-}
 
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.55s ease, transform 0.55s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ─── Responsive ────────────────────────────────────────── */
+/*  Responsive  */
 @media (max-width: 640px) {
   :root { --section-gap: 64px; }
 
@@ -428,14 +414,4 @@ footer {
   .card-thumb { width: 56px; height: 56px; }
 
   .news-list li { grid-template-columns: 44px 1fr; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .fade-in, .reveal {
-    animation: none;
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-  .scroll-hint { animation: none; }
 }
