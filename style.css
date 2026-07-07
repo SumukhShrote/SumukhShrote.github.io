@@ -16,7 +16,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 17.5px;
 }
 
 body {
@@ -96,7 +96,7 @@ a:hover { opacity: 0.65; }
 .hero-inner { width: 100%; }
 
 .hero-label {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   color: var(--secondary);
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -105,7 +105,7 @@ a:hover { opacity: 0.65; }
 }
 
 .hero-name {
-  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  font-size: clamp(2.8rem, 6.5vw, 4.25rem);
   font-weight: 300;
   letter-spacing: -0.03em;
   line-height: 1.05;
@@ -114,14 +114,14 @@ a:hover { opacity: 0.65; }
 }
 
 .hero-tagline {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--secondary);
   margin-bottom: 20px;
   letter-spacing: 0.01em;
 }
 
 .hero-statement {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   color: var(--text);
   max-width: 520px;
   line-height: 1.6;
@@ -134,7 +134,7 @@ a:hover { opacity: 0.65; }
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
 }
 
 .hero-links a {
@@ -174,21 +174,20 @@ a:hover { opacity: 0.65; }
 }
 
 .section-title {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--secondary);
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: var(--text);
   margin-bottom: 48px;
 }
 
 /* ─── About ─────────────────────────────────────────────── */
 .about-text {
-  font-size: 1.0625rem;
-  line-height: 1.75;
+  font-size: 1.125rem;
+  line-height: 1.8;
   color: var(--text);
   font-weight: 300;
-  max-width: 600px;
+  max-width: 620px;
 }
 
 /* ─── Research ──────────────────────────────────────────── */
@@ -204,7 +203,7 @@ a:hover { opacity: 0.65; }
 }
 
 .research-pillar h3 {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--text);
   margin-bottom: 8px;
@@ -212,7 +211,7 @@ a:hover { opacity: 0.65; }
 }
 
 .research-pillar p {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--secondary);
   line-height: 1.7;
   font-weight: 400;
@@ -254,7 +253,7 @@ a:hover { opacity: 0.65; }
 .card-body { flex: 1; min-width: 0; }
 
 .card-title {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--text);
   line-height: 1.45;
@@ -263,13 +262,13 @@ a:hover { opacity: 0.65; }
 }
 
 .card-meta {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   color: var(--secondary);
   margin-bottom: 8px;
 }
 
 .card-desc {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--secondary);
   line-height: 1.65;
   margin-bottom: 8px;
@@ -280,7 +279,7 @@ a:hover { opacity: 0.65; }
   gap: 16px;
 }
 .card-links a {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   color: var(--accent);
   font-weight: 500;
 }
@@ -312,7 +311,7 @@ a:hover { opacity: 0.65; }
 }
 
 .exp-org {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--text);
   letter-spacing: -0.01em;
@@ -325,13 +324,13 @@ a:hover { opacity: 0.65; }
 }
 
 .exp-role {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   color: var(--secondary);
   margin-bottom: 8px;
 }
 
 .exp-desc {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--secondary);
   line-height: 1.65;
 }
@@ -349,7 +348,7 @@ a:hover { opacity: 0.65; }
   grid-template-columns: 52px 1fr;
   gap: 16px;
   align-items: baseline;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
 }
 
 .news-date {
@@ -364,16 +363,21 @@ a:hover { opacity: 0.65; }
 }
 
 /* ─── Contact ───────────────────────────────────────────── */
-.contact-text {
+.contact-email {
+  font-size: 1.0625rem;
+  color: var(--text);
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+.contact-links {
   font-size: 0.9375rem;
-  color: var(--secondary);
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
   align-items: center;
 }
-.contact-text a { color: var(--secondary); }
-.contact-text a:hover { color: var(--accent); opacity: 1; }
+.contact-links a { color: var(--secondary); }
+.contact-links a:hover { color: var(--accent); opacity: 1; }
 
 /* ─── Footer ────────────────────────────────────────────── */
 footer {
@@ -412,7 +416,7 @@ footer {
 
   .nav-links { display: none; }
 
-  .hero-name { font-size: 2.25rem; }
+  .hero-name { font-size: 2.5rem; }
 
   .research-grid { grid-template-columns: 1fr; gap: 24px; }
 
