@@ -403,12 +403,13 @@ footer {
   .nav-links { display: none; }
 
   .hero-inner {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 32px;
-    text-align: center;
   }
-  .hero-photo { width: 140px; height: 140px; }
-  .hero-links { justify-content: center; }
+  .hero-photo {
+    width: 100%;
+    height: 260px;
+  }
   .hero-name { font-size: 2.5rem; }
 
   .research-grid { grid-template-columns: 1fr; gap: 24px; }
@@ -438,27 +439,31 @@ footer {
   width: 100%;
   max-width: 860px;
   display: flex;
-  align-items: center;
-  gap: 64px;
+  align-items: stretch;
+  gap: 56px;
 }
 
 .hero-text {
   flex: 1;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-photo {
   flex-shrink: 0;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .hero-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
-  filter: grayscale(15%);
+  object-position: center top;
+  display: block;
 }
 
 .hero-label {
